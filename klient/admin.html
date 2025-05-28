@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administratora - Blog</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <link rel="stylesheet" href="admin-style.css">
+    <script src="upraw.js"></script> 
+    <script src="wyloguj.js"></script>
+</head>
+<body onload="admin()"> 
+    <div class="page-container">
+        <header>
+            <h1>Panel Administratora</h1>
+            <p id="admin-welcome-message"></p>
+        </header>
+        <button onclick="wyloguj()" class="button">Wyloguj</button>
+        <main>
+            <h2>Wszystkie Posty na Blogu</h2>
+            <div id="admin-posts-container">
+            </div>
+            <div id="admin-message-area" class="message-area"></div> 
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="wyloguj.js"></script>
+</body>
+</html>

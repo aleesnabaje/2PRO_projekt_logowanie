@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+.page-container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+header h1 {
+    color: #007bff; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#admin-welcome-message {
+    text-align: center;
+    font-size: 1.1em;
+    color: #495057;
+    margin-bottom: 30px;
+}
+
+main h2 {
+    color: #343a40;
+    border-bottom: 2px solid #ced4da;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#admin-posts-container .post {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#admin-posts-container .post h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+#admin-posts-container .post-meta {
+    font-size: 0.85em;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+#admin-posts-container .post-meta strong {
+    color: #495057;
+}
+
+#admin-posts-container .post-content {
+    line-height: 1.6;
+}
+
+
+#admin-posts-container .post-actions button {
+    margin-right: 10px;
+    margin-top:10px;
+    padding: 6px 10px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+    transition: background-color 0.3s ease;
+}
+
+#admin-posts-container .edit-button {
+    background-color: #ffc107;
+    color: #212529;
+}
+#admin-posts-container .edit-button:hover {
+    background-color: #e0a800;
+}
+
+#admin-posts-container .delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+#admin-posts-container .delete-button:hover {
+    background-color: #c82333;
+}
+
+.message-area { 
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.message-area.success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.message-area.error {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ced4da;
+    color: #6c757d;
+}

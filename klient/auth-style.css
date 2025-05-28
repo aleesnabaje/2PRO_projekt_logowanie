@@ -1,0 +1,132 @@
+/* auth-style.css - Style dla stron logowania i rejestracji */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Jasne, neutralne tło */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.auth-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Optymalna szerokość dla formularzy logowania/rejestracji */
+    text-align: center;
+}
+
+.auth-container h1 {
+    color: #1877f2; /* Kolor inspirowany popularnymi platformami */
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Etykiety i pola wyrównane do lewej */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4b4f56;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #1877f2;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+button[type="submit"], /* Dla formularzy, jeśli będziesz ich używać */
+.auth-container button { /* Dla przycisków z onclick */
+    background-color: #1877f2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px; /* Dodatkowy margines na górze przycisku */
+}
+
+button[type="submit"]:hover,
+.auth-container button:hover {
+    background-color: #166fe5;
+}
+
+#oke, .message-area { /* Styl dla komunikatów błędów/sukcesu */
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    min-height: 20px; /* Aby kontener nie skakał przy pustej wiadomości */
+}
+
+#oke.error, .message-area.error { /* Specyficzne dla błędów */
+    color: #fa383e;
+    /* background-color: #ffebee; */ /* Można dodać tło dla błędów */
+}
+
+#oke.success, .message-area.success { /* Specyficzne dla sukcesu */
+    color: #42b72a;
+    /* background-color: #e9f7ef; */ /* Można dodać tło dla sukcesu */
+}
+
+.auth-container p { /* Ogólne paragrafy w kontenerze */
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.auth-container a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+/* Dodatkowe style dla pól, jeśli mają być obok siebie */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input {
+    width: calc(100% - 22px); /* Dostosuj, jeśli masz padding/border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <script src="upraw.js"></script>
-</head>
-<body onload="czesc()">
-    
+    <link rel="stylesheet" href="dashboard-style.css">
+     <script src="upraw.js"></script>
+     <script src="wyloguj.js"></script>
+    </head>
+<body onload="onDashboardLoad()">
+
+    <div id="czesc"></div>
+
+    <a href="dodaj.html" class="button">Dodaj Nowy Post</a>
+    <a href="moje-posty.html" class="button">Moje Posty</a> 
+    <button onclick="wyloguj()" class="button">Wyloguj</button>
+
+    <div id="posts-container">
+        </div>
 
     <script src="app.js"></script>
     <script src="wyloguj.js"></script>

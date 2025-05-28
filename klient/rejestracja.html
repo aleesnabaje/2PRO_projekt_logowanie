@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rejestracja</title>
-</head>
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="auth-style.css"> </head>
 <body>
-    <h1>Rejestracja</h1>
-    Login:<input type="text" id="login"><br>
-    Hasło: <input type="password" id="haslo"><br>
-    Powtórz hasło: <input type="password" id="haslo2"><br>
-    <button onclick="rejestracja()">Zarejestruj</button>
-    <p id="oke"></p><br>
-
-    <a href="logowanie.html">logowanie</a>
-
-    <script src="app.js"></script>
+    <div class="auth-container"> <h1>Rejestracja</h1>
+        <div class="form-group"> <label for="login">Login:</label>
+            <input type="text" id="login">
+        </div>
+        <div class="form-group"> <label for="haslo">Hasło:</label>
+            <input type="password" id="haslo">
+        </div>
+        <div class="form-group"> <label for="haslo2">Powtórz hasło:</label>
+            <input type="password" id="haslo2">
+        </div>
+        <button onclick="rejestracja()">Zarejestruj</button>
+        <p id="oke" class="message-area"></p> <p>Masz już konto? <a href="logowanie.html">Zaloguj się</a></p>
+    </div> <script src="app.js"></script>
 </body>
 </html>
